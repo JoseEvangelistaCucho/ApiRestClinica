@@ -19,9 +19,11 @@ import io.swagger.models.Model;
 
 
 @RestController
+/*CORS*/
 @CrossOrigin(origins = "*", methods= {RequestMethod.GET,RequestMethod.PUT,RequestMethod.POST})
 @RequestMapping(value="/api")
 public class LoginController {
+	
 	
 	@Autowired
 	usuarioServicio usuarioServicio;
