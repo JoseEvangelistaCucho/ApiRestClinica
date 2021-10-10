@@ -19,7 +19,7 @@ import io.swagger.models.Model;
 
 
 @RestController
-//@CrossOrigin(origins = "*", methods= {RequestMethod.GET,RequestMethod.PUT,RequestMethod.POST})
+@CrossOrigin(origins = "*", methods= {RequestMethod.GET,RequestMethod.PUT,RequestMethod.POST})
 @RequestMapping(value="/api")
 public class LoginController {
 	
