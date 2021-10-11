@@ -42,7 +42,8 @@ public class LoginController {
 	    }
 	   
 	    
-/*	  //Este metodo guardará al usuario enviado por una petición POST
+/*	  
+ //Este metodo guardará al usuario enviado por una petición POST
 	  @PostMapping("/usuario")
 	    public Usuario addUser(@RequestBody Usuario usuario) {
 		  usuario.setIdUsuario(0);
