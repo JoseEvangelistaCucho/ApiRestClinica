@@ -20,7 +20,11 @@ public class historialServiceImpl {
     @PersistenceContext
     private EntityManager em;
  
-   		public List<Historial> getHistorialById(String Cod_Historial) {
+   	public List<Historial> getHistorialById(String Cod_Historial) {
         return em.createNamedStoredProcedureQuery("historial").setParameter("Cod_Historial",Cod_Historial).getResultList();
+    }
+   	public List<Historial> putHistorialById(String Cod_Historial,String Observaciones) {
+        return em.createNamedStoredProcedureQuery("uspActualizar_historial").setParameter("Cod_Historial",Cod_Historial)
+        		.setParameter("Observaciones",Observaciones).getResultList();
     }
 }

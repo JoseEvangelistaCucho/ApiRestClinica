@@ -26,8 +26,11 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @NamedStoredProcedureQueries({
     @NamedStoredProcedureQuery(name = "historial", procedureName = "historial", parameters = {
-    		@StoredProcedureParameter(mode = ParameterMode.IN,name = "Cod_Historial",type=String.class)})})
+    		@StoredProcedureParameter(mode = ParameterMode.IN,name = "Cod_Historial",type=String.class)}),
 
+    @NamedStoredProcedureQuery(name = "uspActualizar_historial", procedureName = "uspActualizar_historial", parameters = {
+    		@StoredProcedureParameter(mode = ParameterMode.IN,name = "Cod_Historial",type=String.class),
+            @StoredProcedureParameter(mode = ParameterMode.IN,name ="Observaciones",type=String.class)})})
 
 public class Historial {
 
